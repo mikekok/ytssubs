@@ -53,6 +53,7 @@ The subtitle is downloaded at as .srt.
 ## Packages
 * [request](https://github.com/request/request)
 * [cheerio](https://github.com/cheeriojs/cheerio)
+* [extract-zip](https://github.com/maxogden/extract-zip)
 
 ## License
 This project is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software. But you always need to state that Mike Kokkolios is the original author of this template.

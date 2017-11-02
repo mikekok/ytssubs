@@ -1,11 +1,23 @@
 {
   "name": "ytssubs",
   "version": "1.0.0",
-  "description": "A yts.ag (YIFY) subtitles API",
+  "description": "A yifysubtitles.com subtitles API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikekok/ytssubs.git"
+  },
+  "keywords": [
+    "yts",
+    "yify",
+    "subs",
+    "subtitles",
+    "yifysubtitles",
+    "subs api"
+  ],
   "author": "Mike Kokkolios <mikekokkolios@gmail.com>",
   "license": "MIT",
   "dependencies": {
