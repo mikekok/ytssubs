@@ -47,9 +47,9 @@ let getSubs = (id, cb) => {
 }
 
 // Download subtitles in subs folder
-let downloadSubs = (url, cb) => {
-  let srtPath = `${__dirname}/subs`
-  let path = `${__dirname}/subs/${url.split('/')[4]}`
+let downloadSubs = (url, options, cb) => {
+  let srtPath = options.path
+  let path = `${options.path}/${url.split('/')[4]}`
 
   let file = fs.createWriteStream(path)
   let req = http.get(url, (res) => {
