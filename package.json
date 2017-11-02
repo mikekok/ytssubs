@@ -1,0 +1,16 @@
+{
+  "name": "ytssubs",
+  "version": "1.0.0",
+  "description": "A yts.ag (YIFY) subtitles API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Kokkolios <mikekokkolios@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "extract-zip": "^1.6.6",
+    "request": "^2.83.0"
+  }
+}
