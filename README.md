@@ -40,7 +40,7 @@ Download subtitles by URL
 ```javascript
 const ytssubs = require('ytssubs')
 
-ytssubs.downloadSubs('http://www.yifysubtitles.com/subtitle/rango-english-yify-1787.zip', () => {
+ytssubs.downloadSubs('http://www.yifysubtitles.com/subtitle/rango-english-yify-1787.zip', {path: `${__dirname}/subs`}, () => {
   console.log('Your subtitle has been downloaded')
 })
 
