@@ -1,6 +1,8 @@
 # ytssubs
 A Node.js API for yifysubtitles.com
 
+[![NPM](https://nodei.co/npm/ytssubs.png)](https://www.npmjs.com/package/ytssubs)
+
 ## Installation
 * `npm install ytssubs`
 
