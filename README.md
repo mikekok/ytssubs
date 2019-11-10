@@ -48,7 +48,7 @@ ytssubs.downloadSubs('http://www.yifysubtitles.com/subtitle/rango-english-yify-1
 
 /*
 The download path is set to './subs'.
-The subtitle is downloaded at as .srt.
+The subtitle is downloaded as .srt.
 */
 ```
 
