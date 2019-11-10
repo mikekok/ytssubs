@@ -6,7 +6,7 @@ const http = require('http')
 const fs = require('fs')
 
 // Base URL
-const baseURL = 'http://www.yifysubtitles.com'
+const baseURL = 'https://www.yifysubtitles.com'
 
 // Search by IMDB id
 let getSubs = (id, cb) => {
