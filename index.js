@@ -2,7 +2,7 @@
 const request = require('request')
 const cheerio = require('cheerio')
 const extract = require('extract-zip')
-const http = require('http')
+const https = require('https')
 const fs = require('fs')
 
 // Base URL
@@ -47,15 +47,14 @@ let getSubs = (id, cb) => {
 }
 
 // Download subtitles in subs folder
-let downloadSubs = (url, options, cb) => {
-  let srtPath = options.path
-  let path = `${options.path}/${url.split('/')[4]}`
+let downloadSubs = (url, filepath, cb) => {
+  let path = `${filepath}/${url.split('/')[4]}`
 
   let file = fs.createWriteStream(path)
-  let req = http.get(url, (res) => {
+  https.get(url, (res) => {
     res.pipe(file)
     file.on('finish', () => {
-      extract(path, {dir: srtPath}, () => {
+      extract(path, {dir: filepath}, () => {
         fs.unlink(path, () => {
           file.close()
           cb()
